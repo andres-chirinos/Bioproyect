@@ -1,0 +1,166 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: auto;
+}
+
+header {
+    background-color: #5086c1;
+    margin: 0vw;
+    padding: 0vw;
+    width: 100vw;
+    height: 10vw;
+
+}
+
+.titleText {
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.subtitleText {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+button{
+    vertical-align: middle;
+    resize: none;
+
+    background-color: rgb(151, 208, 255);
+    color: white;
+    font-style: italic; 
+
+    width: auto;
+    max-width: 5cm;
+    min-width: 1cm;
+
+    height: auto;
+    max-height: 1cm;
+    min-height: 0.2cm;
+
+    cursor: pointer;
+
+    border-width: 0;
+
+    padding: 5px;
+    margin: 2px;
+
+    outline: none;
+    font-size: 96%;
+}
+
+button:hover{
+    background-color: rgb(108, 189, 255);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.904);
+    size-adjust: 90%;
+
+    align-content: center;
+    align-self: center;
+}
+
+#FormContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100%;
+}
+
+#addToDo {
+    vertical-align: middle;
+    resize: none;
+
+    background-color: rgb(151, 208, 255);
+    color: white;
+    font-style: italic; 
+
+    width: auto;
+    max-width: 5cm;
+    min-width: 3cm;
+
+    height: auto;
+    max-height: 2cm;
+    min-height: 1cm;
+
+    cursor: pointer;
+}
+
+#ColorInput{
+    width: auto;
+    max-width: 2.4cm;
+    min-width: 1cm;
+
+    height: auto;
+    max-height: 2.4cm;
+    min-height: 1cm;
+
+    cursor: pointer;
+}
+
+#DescInput{
+    width: 100%;
+    max-width: 12cm;
+    min-width: 5cm;
+
+    height: fit-content;
+    max-height: 2cm;
+    min-height: 1cm;
+
+    vertical-align: middle;
+    resize: none;
+}
+
+#NameInput , #TimeInput{
+    width: auto;
+    max-width: 8cm;
+    min-width: 5cm;
+
+    height: auto;
+    max-height: 2cm;
+    min-height: 1cm;
+
+    outline: none;
+    vertical-align: middle;
+}
+
+
+#NameInput, #TimeInput, #DescInput, #ColorInput ,#addToDo {
+    border-width: 0;
+
+    padding: 5px;
+    margin: 2px;
+
+    outline: none;
+    font-size: 96%;
+}
+
+#NameInput, #TimeInput, #DescInput, #ColorInput {
+    background-color: rgb(233, 233, 233);
+
+    font-style: italic;
+}
+
+.paragraph-styling {
+    background-color: rgb(233, 233, 233);
+    border-width: 0;
+
+    padding: 5px;
+    margin: 2px;
+    outline: none;
+
+    font-size: 96%;
+    font-style: italic;
+
+    cursor: pointer;
+}
+
+.to-dos {
+    margin-top: 25px;
+}
+
+#addToDo:hover{
+    background-color: rgb(108, 189, 255);
+}

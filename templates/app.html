@@ -1,0 +1,100 @@
+<!Doctype html>
+<html lang="es" dir="ltr">
+<head>
+    <!--Title-->
+    <title>Aplicación | Proyecto Contaminación</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href='/static/css/main.css'>
+    <link rel="stylesheet" href='../static/css/main.css'>
+    <link rel='icon' href='/static/img/icon_16.png' type = 'image/png'/>
+
+    <!--Base-->
+    <base href="/app" target="_blank">
+
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Contamination proyect keywords">
+    <meta name="author" content="Contamination proyect team">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Contamination proyect description">
+    <meta name="application-name" content="Contamination proyect">
+
+    <!--PWA Settings-->
+<!--<meta name="theme-color" content="#A7A7A7">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/png" href='/static/img/icon_520.png'>
+    <link rel="apple-touch-icon" href='/static/img/icon_520.png'>
+    <link rel="apple-touch-startup-image" href='/static/img/icon_1378.png'>
+
+    <link rel="manifest" href="/static/manifest.json">-->
+
+</head>
+<body>
+    <div class="header">
+        <h1>Focusing App</h1>
+        <h4>Proyecto Final de Biologia</h4>
+    </div>
+    <div class="navbar">
+        <a href="/" class="active" target="_self">Casa</a>
+        <a href="/terms" target="_self">Terminos</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>Método pomodoro</h2>
+            <p>El método pomodoro ayuda en el trabajo y organización ress cuando estudias. </p>
+            <h4>Configure sus propios tiempos y repeticiones.</h4>
+            <div class="app" style="background-color: white;">
+                <!--<form id="FormContainer" name="pomodoroForm" target="_black">-->
+                    <h4>Tiempo restante</h4>
+                    <h1 id="Clock">0:00</h1>
+                    <h4>Tiempo de Minutos y segundos</h4>
+                    <input id="pomodoroMinutos" type="number" name="Work" value="25" required>
+                    <input id="pomodoroSegundos" type="number" name="Break" value="0" required>
+                    <h4>Botones</h4>
+                    <input id="pomodoroStart" type="submit" class="button" name="submit" value="Iniciar"></button>
+                    <button id="pomodoroPause/Stop" class="button" >Detener</button>  
+                <!--</form>-->
+            </div>
+            <p>El método pomodoro ayuda en el trabajo y organización ress cuando estudias. </p>
+        </div>
+        <div class="main">
+            <h2>Tareas</h2>
+            <h5 id="Information"></h5>
+
+            <p>Le ayudan a organizar todos sus tareas en una gran lista.</p>
+            <h4>Un clic para completar y doble clic para eliminar.</h4>
+            <div class="app">
+                <form id="FormContainer" autocomplete="on" name="TaskForm" target="_self">
+                    <h5>Crear nueva tarea</h5>
+                    <input id="NameInput" type="text" name="taskname" placeholder="Nombre de la tarea" required>
+                    <input id="TimeInput" type="datetime-local" name="taskdate" required>
+                    <input id="ColorInput" type="color" name="taskcolor" value="#FFFFFF">
+                    <textarea id="DescInput" type="tel" placeholder="Descripcion de la tarea"></textarea>
+                    <button id="ResetButton" class="button">reset</button>
+                    <input id="addToDo" class="button" type="submit" name="submit" value="[+] añadir"> 
+                </form>
+                <div id="toDoContainer" class="list">
+                    <h5>Lista</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h5>Focusing Team @ 2021</h5>
+        <h5 id="Information"></h5>
+    </div>
+    <!--Scripts-->
+<!--<script src='/static/js/sw.js'></script>
+    <script src='/static/js/main.js'></script>-->
+
+    <noscript>Your browser does not support JavaScript!</noscript>
+</body>
+</html>
