@@ -10,19 +10,17 @@ def homepage():
 def apppage():
     return render_template('app.html')
 
-@app.route('/wiki', strict_slashes=False)
-def wikipage():
-    return redirect("https://github.com/andres-chirinos/Contaminationproyect/wiki")
+@app.route('/proyect', strict_slashes=False)
+def proyectpage():
+    return redirect("https://github.com/andres-chirinos/Contaminationproyect")
 
-@app.route('/discussions', strict_slashes=False)
-def discusspage():
-    return redirect("https://github.com/andres-chirinos/Contaminationproyect/discussions")
+@app.route('/doc', strict_slashes=False)
+def docpage():
+    return render_template('doc.html')
 
-@app.route('/poll', strict_slashes=False)
-def pollpage():
-    return redirect("https://docs.google.com/forms/d/e/1FAIpQLScr6EoAdKBgAX2p_I9ngHhBgmtgyf46Pcj0tB4ajEFa1VyEuA/viewform?usp=sf_link")
+@app.errorhandler(404)
+def error(exception):
+    return redirect("/")
 
-
-# Make sure this we are executing this file
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug = True, port = 4000)#host = '0.0.0.0', port = 4000, debug=True)

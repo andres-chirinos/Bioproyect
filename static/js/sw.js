@@ -2,13 +2,6 @@
 const CACHE_NAME = 'CacheFocusing_0.1.0',
   urlsToCache = [
     '/',
-    '/static/css/main.css',
-    '/static/img/icon_16.png',
-    '/static/img/icon_144.png',
-    '/static/js/sw.js',
-    '/static/js/main.js',
-    '/static/js/redirect.html',
-    '/static/manifest.json',
   ]
 
 /**

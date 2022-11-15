@@ -1,100 +1,190 @@
 <!Doctype html>
-<html lang="es" dir="ltr">
+<html lang="es" class="h-100" dir="ltr">
+
 <head>
-    <!--Title-->
-    <title>Aplicación | Proyecto Contaminación</title>
+  <!--Title-->
+  <title>App | CO²out</title>
 
-    <!--Styles-->
-    <link rel="stylesheet" href='/static/css/main.css'>
-    <link rel="stylesheet" href='../static/css/main.css'>
-    <link rel='icon' href='/static/img/icon_16.png' type = 'image/png'/>
+  <!--Styles-->
+  <link rel="stylesheet" href='/static/dist/css/carousel.css'>
+  <link rel="stylesheet" href='/static/dist/css/cover.css'>
+  <link rel="stylesheet" href='/static/dist/css/bootstrap.min.css'>
+  <link rel='icon' href='/static/img/icon_30.png' type='image/png' />
 
-    <!--Base-->
-    <base href="/app" target="_blank">
+  <!--Base-->
+  <base href="/app" target="_blank">
 
-    <!--Meta-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Contamination proyect keywords">
-    <meta name="author" content="Contamination proyect team">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Contamination proyect description">
-    <meta name="application-name" content="Contamination proyect">
+  <!--Meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Contamination proyect keywords">
+  <meta name="author" content="Contamination proyect team">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Contamination proyect description">
+  <meta name="application-name" content="Contamination proyect">
+  <meta name="generator" content="Hugo 0.104.2">
 
-    <!--PWA Settings-->
-<!--<meta name="theme-color" content="#A7A7A7">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
 
-    <link rel="shortcut icon" type="image/png" href='/static/img/icon_520.png'>
-    <link rel="apple-touch-icon" href='/static/img/icon_520.png'>
-    <link rel="apple-touch-startup-image" href='/static/img/icon_1378.png'>
+  <!--PWA Settings-->
+  <meta name="theme-color" content="#333333">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link rel="manifest" href="/static/manifest.json">-->
+  <link rel="shortcut icon" type="image/png" href='/static/img/icon_520.png'>
+  <link rel="apple-touch-icon" href='/static/img/icon_520.png'>
+  <link rel="apple-touch-startup-image" href='/static/img/icon_520.png'>
+
+  <link rel="manifest" href="/static/manifest.json">
+
+  <style type="text/css">
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
 
 </head>
-<body>
-    <div class="header">
-        <h1>Focusing App</h1>
-        <h4>Proyecto Final de Biologia</h4>
-    </div>
-    <div class="navbar">
-        <a href="/" class="active" target="_self">Casa</a>
-        <a href="/terms" target="_self">Terminos</a>
-    </div>
 
-    <div class="row">
-        <div class="side">
-            <h2>Método pomodoro</h2>
-            <p>El método pomodoro ayuda en el trabajo y organización ress cuando estudias. </p>
-            <h4>Configure sus propios tiempos y repeticiones.</h4>
-            <div class="app" style="background-color: white;">
-                <!--<form id="FormContainer" name="pomodoroForm" target="_black">-->
-                    <h4>Tiempo restante</h4>
-                    <h1 id="Clock">0:00</h1>
-                    <h4>Tiempo de Minutos y segundos</h4>
-                    <input id="pomodoroMinutos" type="number" name="Work" value="25" required>
-                    <input id="pomodoroSegundos" type="number" name="Break" value="0" required>
-                    <h4>Botones</h4>
-                    <input id="pomodoroStart" type="submit" class="button" name="submit" value="Iniciar"></button>
-                    <button id="pomodoroPause/Stop" class="button" >Detener</button>  
-                <!--</form>-->
+<body class="d-flex h-100 text-center text-bg-dark">
+  <div class="cover-container d-flex w-100 h-100 p-0 mx-auto flex-column">
+    <header class="mb-auto">
+      <div class="alert alert-secondary" role="alert">
+        <a class="btn btn-secondary" type="button" href="/">Volver</a> CO²out aún se encuentra en desarrollo, muchas
+        gracias por formar parte de esto ❤
+      </div>
+
+      <br>
+
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-label="Segment one" style="width: 15%" aria-valuenow="15"
+          aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-success" role="progressbar" aria-label="Segment two" style="width: 30%"
+          aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar bg-info" role="progressbar" aria-label="Segment three" style="width: 20%"
+          aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <br>
+
+      <div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">8.1 Toneladas por habitante en Bolivia</li>
+          <li class="list-group-item">A second item</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Transporte
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
-            <p>El método pomodoro ayuda en el trabajo y organización ress cuando estudias. </p>
+          </div>
         </div>
-        <div class="main">
-            <h2>Tareas</h2>
-            <h5 id="Information"></h5>
-
-            <p>Le ayudan a organizar todos sus tareas en una gran lista.</p>
-            <h4>Un clic para completar y doble clic para eliminar.</h4>
-            <div class="app">
-                <form id="FormContainer" autocomplete="on" name="TaskForm" target="_self">
-                    <h5>Crear nueva tarea</h5>
-                    <input id="NameInput" type="text" name="taskname" placeholder="Nombre de la tarea" required>
-                    <input id="TimeInput" type="datetime-local" name="taskdate" required>
-                    <input id="ColorInput" type="color" name="taskcolor" value="#FFFFFF">
-                    <textarea id="DescInput" type="tel" placeholder="Descripcion de la tarea"></textarea>
-                    <button id="ResetButton" class="button">reset</button>
-                    <input id="addToDo" class="button" type="submit" name="submit" value="[+] añadir"> 
-                </form>
-                <div id="toDoContainer" class="list">
-                    <h5>Lista</h5>
-                </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
             </div>
+          </div>
         </div>
-    </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <div class="footer">
-        <h5>Focusing Team @ 2021</h5>
-        <h5 id="Information"></h5>
-    </div>
-    <!--Scripts-->
-<!--<script src='/static/js/sw.js'></script>
-    <script src='/static/js/main.js'></script>-->
+  </div>
 
-    <noscript>Your browser does not support JavaScript!</noscript>
+  <script src="/static/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

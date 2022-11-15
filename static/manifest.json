@@ -1,33 +1,28 @@
 {
-    "name": "Focusing",
-    "short_name": "Focusing",
-    "description": "Focusing desc",
-    "background_color": "#FFFFFF",
-    "theme_color": "#A7A7A7",
+    "name": "CO²out app",
+    "short_name": "CO²out",
+    "description": "CO²out desc",
+    "background_color": "#333333",
+    "theme_color": "#333333",
     "orientation": "portrait",
     "display": "standalone",
-    "start_url": "/static/js/redirect.html",
-    "scope": "/static/js/",
+    "start_url": "/templates/app.html",
+    "scope": "/",
     "lang": "en-US",
     "icons": [
-      {
-        "src": "/static/img/icon_1378.png",
-        "sizes": "1378x1378",
-        "type": "image/png"
-      },
       {
         "src": "/static/img/icon_520.png",
         "sizes": "520x520",
         "type": "image/png"
       },
       {
-        "src": "/static/img/icon_144.png",
-        "sizes": "144x144",
+        "src": "/static/img/icon_160.png",
+        "sizes": "160x160",
         "type": "image/png"
       },
       {
-        "src": "/static/img/icon_16.png",
-        "sizes": "16x16",
+        "src": "/static/img/icon_30.png",
+        "sizes": "30x30",
         "type": "image/png"
       }
     ]
