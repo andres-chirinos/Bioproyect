@@ -14,9 +14,9 @@ def apppage():
 def proyectpage():
     return redirect("https://github.com/andres-chirinos/Contaminationproyect")
 
-@app.route('/doc', strict_slashes=False)
+@app.route('/documentation', strict_slashes=False)
 def docpage():
-    return redirect("https://docs.google.com/document/u/1/d/e/2PACX-1vTS4O8MKVFl2T_jot5IWeT3s4FryWjrkLG6KXtJD0vBvvCxJbfXr9ms42gRIQf0fw/pub")
+    return render_template('documentation.html')
 
 @app.errorhandler(404)
 def error(exception):
