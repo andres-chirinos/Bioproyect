@@ -16,7 +16,7 @@ def proyectpage():
 
 @app.route('/doc', strict_slashes=False)
 def docpage():
-    return render_template('doc.html')
+    return redirect("https://docs.google.com/document/u/1/d/e/2PACX-1vTS4O8MKVFl2T_jot5IWeT3s4FryWjrkLG6KXtJD0vBvvCxJbfXr9ms42gRIQf0fw/pub")
 
 @app.errorhandler(404)
 def error(exception):
